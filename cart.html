@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <style>
+    /* CSS styles for the cart page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .item-name {
+      flex-grow: 1;
+      font-weight: bold;
+    }
+
+    .checkout-button {
+      display: block;
+      width: 150px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #43bccd;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .checkout-button:hover {
+      background-color: green;
+    }
+
+    .clear-button {
+      display: block;
+      width: 150px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #f44336;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .clear-button:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cart</h1>
+
+  <div id="cart-items">
+    <!-- Cart items will be dynamically added here -->
+  </div>
+
+  <input type="checkbox" id="select-all-checkbox">
+  <label for="select-all-checkbox">Select All</label>
+
+  <a href="#" class="checkout-button">Checkout</a>
+  <a href="#" class="clear-button">Clear Cart</a>
+
+  <script>
+    // JavaScript code for displaying cart items and clearing the cart
+    document.addEventListener('DOMContentLoaded', function() {
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      var cartItemsContainer = document.getElementById('cart-items');
+
+      cartItems.forEach(function(item) {
+        var cartItemDiv = document.createElement('div');
+        cartItemDiv.classList.add('cart-item');
+
+        var itemName = document.createElement('span');
+        itemName.classList.add('item-name');
+        itemName.textContent = item;
+        cartItemDiv.appendChild(itemName);
+
+        cartItemsContainer.appendChild(cartItemDiv);
+      });
+
+      var clearButton = document.querySelector('.clear-button');
+      clearButton.addEventListener('click', function() {
+        localStorage.removeItem('cartItems');
+        cartItemsContainer.innerHTML = '';
+      });
+    });
+  </script>
+</body>
+</html>

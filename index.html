@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megaloja</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="imagem a ser definida" type="image/x-icon">
+    <!-- Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">   
+
+
+</head>
+<body>
+    <header id="home" class="header">
+        <nav class="nav">
+            <div class="navigation container">
+                <div class="logo1">
+                    <h1><img src="assets/img/logo.png" width="25" alt="logo">Shop<span class="loja">Wamz</span></h1>
+                </div>
+
+                <div class="menu">
+                    <div class="top-nav">
+                        <div class="logo">
+                            <h1><img src="assets/img/logo.png" width="25" alt="logo">Shop<span class="loja">Wamz</span></h1>
+                        </div>
+                        <div class="close">
+                            <i class='bx bx-x'></i>
+                        </div>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link scroll-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link scroll-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link scroll-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link scroll-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="account.html" class="nav-link scroll-link">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link icon"><i class='bx bx-shopping-bag'></i></a>
+                        </li>                                    
+                    </ul>                    
+                </div>               
+
+                <a href="cart.html" class="cart-icon">
+                    <i class='bx bx-shopping-bag'></i>
+                </a>         
+    
+                <li class="hamburguer">
+                    <i class="bx bx-menu"></i>
+                </li>
+            </div>            
+        </nav>        
+        
+        <img src="assets/img/model1.png" class="hero-img" alt="women hero">
+
+        <div class="hero-content">
+            <h2><span class="discount">70%</span> SALE OFF</h2>
+            <h1>
+                <span>Summer Festival</span>
+                <span class="discount">Garmi maa Raila nai Raila</span>                
+            </h1>
+            <a href="#" class="btn">Shop NOW</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section advert">
+            <div class="advert-center container">
+                <div class="advert-box">
+                    <div class="dotted">
+                        <div class="content">
+                            <h2>
+                                Female <br />
+                                Wears
+                            </h2>
+                            <h4>Quality Female Products<br>at the palm of your hand.</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/woman.png" alt="FemaleModel">
+                </div>
+                <div class="advert-box">
+                    <div class="dotted">
+                        <div class="content">
+                            <h2>
+                                Male <br />
+                                Wears
+                            </h2>
+                            <h4>Classy Sportswears<br>are one click away</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/man.png" alt="homem">
+                </div>
+                <div class="advert-box">
+                    <div class="dotted">
+                        <div class="content">
+                            <h2>
+                                Kids <br />
+                                Products
+                            </h2>
+                            <h4>Kids always need a change<br>Diapers? Available</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/kid.jpg" alt="criança">
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured">
+            <div class="title">
+                <h1>Featured Products</h1>
+            </div>
+
+            <div class="product-center container">
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product1.png" alt="Product1">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 1')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Saree</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 3000</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product2.jpg" alt="Product2">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 2')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Kurtha Set</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 1800</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product3.jpg" alt="Product3">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 3')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Drip Blue Jacket</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 1200</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product4.jpg" alt="Product4">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 4')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>T-shirt</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 1400</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured">
+            <div class="title">
+                <h1>Ultimate Choices</h1>
+            </div>
+
+            <div class="product-center container">
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product5.jpg" alt="Product5">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 5')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Life Jacket</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 1500</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product6.jpg" alt="Product6">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 6')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Kurtha</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 1800</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product7.jpg" alt="Product7">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 7')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Drip Blazers</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 2200</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <img src="assets/img/Product8.jpg" alt="Product8">
+                        <ul class="icon">
+                            <span><i class="bx bx-heart"></i></span>
+                            <span><i class="bx bx-shopping-bag" onclick="addToCart('Product 8')"></i></span>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#">
+                            <h3>Drip Coat</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div>
+                        <h4 class="price">Rs. 2400</h4>
+                    </div>
+                </div>
+                
+        </section>
+
+        <section class="section">
+            <div class="product-banner">
+                <div class="left">
+                    <img src="assets/img/discuss1.jpg" alt="Discussion">
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h2><span class="discount">70%</span> SALE OFF</h2>
+                        <h1>
+                            <span>Enjoy the Heavy Discounts on Prices</span>
+                            <span>only if you</span>
+                        </h1>
+                        <a href="#" class="btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="testimonial-center container">
+                <div class="testimonial">
+                   <span>&ldquo;</span> 
+                   <p>
+                       As a Professional Football player I have lived all my Life in Europe and now I'm at
+                       Miami. Miami, you know like in GTA Vice City? Yeah that. Even tho I live I was born
+                       in Rosario, Argentina raised in Barcelona and disapperead for 2 years and now in
+                       Miami, yo mann the mero Nepali ho yar.
+                    </p>
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                        <i class="bx bx-star"></i>
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="img-cover">
+                        <img src="assets/img/review1.png" alt="Messi">
+                    </div>
+                    <h4>Lionel Messi</h4>                    
+                </div>
+                <div class="testimonial">
+                    <span>&ldquo;</span> 
+                    <p>
+                        I have said many things in my career. Maybe I was rough and tough to my own family but I'm a 
+                        thrifter when it comes to shopping. So maybe I was harsh to batman at times (not really tho) 
+                        I was a character development to everyone like who the hell washes a laptop anyway. GG y'all.
+                     </p>
+                     <div class="rating">
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bx-star"></i>
+                     </div>
+                     <div class="img-cover">
+                         <img src="assets/img/review2.jpg" alt="KokilaBane">
+                     </div>
+                     <h4>Kokila Bane</h4>
+                </div>     
+                <div class="testimonial">
+                    <span>&ldquo;</span> 
+                    <p>
+                        A raccon. Yeah a raccon. The story was mine all along, you just didnt realized it. I was 
+                        literally a raccon like damn. Thor called me rabbit. My friend is a tree. I live with bunch of
+                        crazy people like some of them are literally green or blue. AHAHHHAHHA, So Anyway Drax is a joke.
+                     </p>
+                     <div class="rating">
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                         <i class="bx bxs-star"></i>
+                     </div>
+                     <div class="img-cover">
+                         <img src="assets/img/review3.png" alt="Rocket">
+                     </div>
+                     <h4>Diana</h4>
+                </div>     
+            </div>
+        </section>
+        <section class="section">
+            <div class="brands-center container">
+                <div class="brand">
+                    <img src="assets/img/nike.png" alt="Nike">                    
+                </div>
+                <div class="brand">
+                    <img src="assets/img/pulma.png" alt="Pulma">                   
+                </div>
+                <div class="brand">
+                    <img src="assets/img/Goldstar.png" alt="Goldstar">                   
+                </div>
+                <div class="brand">
+                    <img src="assets/img/adidas.png" alt="Adidas">                   
+                </div>
+                <div class="brand">
+                    <img src="assets/img/reebook.png" alt="Reebook">                  
+                </div>  
+                <div class="brand">
+                    <img src="assets/img/kappa.png" alt="Kappa">                  
+                </div>                   
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">Branches</a>
+                </div>
+                <div class="footer-center">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Gift History</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>ADDRESS</h3>
+                    <p>Brihaspati Marga, Balkot, Bhaktapur</p>
+                    <p>Zip Code: 44810</p>
+                    <p>Contact: 98434368715</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!--Custom Script-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
