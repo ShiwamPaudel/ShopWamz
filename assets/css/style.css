@@ -176,9 +176,9 @@ li{
     color: var(--sixth-color);    
 }
 
-.nav-item:not(:last-child){
+/* .nav-item:not(:last-child){
     margin-right: 0.5rem;
-}
+} */
 
 .nav-link:link,
 .nav-link:visited{    
